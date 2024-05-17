@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+       
+        <h1 class="titulo">Veni al Gym!</h1>
+      </div>
+
+      <div class="content">
+        <div class="forms">
+          <div class="form-parti-1">
+            <div class="section-datos-personales">
+          <fieldset class="datos-personales fondo-form fondo-input">
+            <legend class="subtitulos">Datos Personales</legend>
+            <label for="">Nombre:*</label>
+            <input type="text" class="color-tamano-input" required />
+            <label for="">Apellido:*</label>
+            <input type="text" class="color-tamano-input" required />
+            <label for="">Documento:*</label>
+            <input type="text" class="color-tamano-input" required />
+            <label for="">Nacionalidad:*</label>
+            <select
+              name="nacionalidad"
+              aria-placeholder="- Seleccionar -"
+              class="color-tamano-input"
+              required
+            >
+              <option disabled selected>- Seleccionar -</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Paraguay">Paraguay</option>
+            </select>
+            <label for="contanos">Contanos un poco de vos...</label>
+            <textarea
+              name=""
+              id="contanos"
+              cols="30"
+              rows="10"
+              class="color-tamano-input"
+            >
+            </textarea>
+            <label for="">Sexo:*</label>
+            <div class="sexo">
+              <label>
+                <input
+                  class="radio"
+                  type="radio"
+                  name="sexo"
+                  value="femenino"
+                  required
+                />
+                Femenino
+              </label>
+
+              <label>
+                <input type="radio" name="sexo" value="masculino" required />
+                Masculino
+              </label>
+
+              <label>
+                <input type="radio" name="sexo" value="otro" required />
+                Otro
+              </label>
+          </fieldset>
+        </div>
+          </div>
+
+        
+
+        <div class="punteado"></div>
+          
+          <div class="form-part-2">
+<div class="section-datos-contacto">
+          <fieldset class="fondo-form fondo-input">
+            <legend class="subtitulos">Datos del Contacto</legend>
+            <label for="">Telefono:</label>
+            <input
+              type="tel"
+              placeholder="Codigo de area y numero"
+              class="color-tamano-input input-right"
+              required
+            />
+            <label for="">Direccion de correo electronico:*</label>
+            <input
+              type="email"
+              placeholder="Ej: mail@gmail.com"
+              class="color-tamano-input input-right"
+              required
+            />
+          </fieldset>
+        </div>
+        <div class="punteado">
+         
+        </div>
+        <div class="section-actividades">
+          <fieldset class="fondo-form actividades">
+            <legend class="subtitulos">Actividades</legend>
+            <h3 class="text">
+              Por favor, indica cuales actividades te inetresan
+            </h3>
+            <label for="">Sede palermo:</label>
+
+            <div class="sedes">
+              <label>
+                <input type="checkbox" name="actividad" value="basquet" class="sedes-check"/>
+                Basquet
+              </label>
+
+              <label>
+                <input type="checkbox" name="actividad" value="boxeo" />
+                Boxeo
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  name="actividad"
+                  value="futbol"
+                />
+                Futbol
+              </label>
+
+              <label>
+                <input type="checkbox" name="actividad" value="tenis" />
+                Tenis
+              </label>
+            </div>
+            <label for="">Sede Rosario:</label>
+            <div class="sedes">
+              <label>
+                <input type="checkbox" name="actividad" value="basquet" />
+                Basquet
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  name="actividad"
+                  value="futbol"
+                />
+                Futbol
+              </label>
+
+              <label>
+                <input type="checkbox" name="actividad" value="rugby" />
+                Rugby
+              </label>
+
+              <label>
+                <input type="checkbox" name="actividad" value="voley" />
+                Voley
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="img-content"><!-- <img src="assets/img-content.svg" alt=""> --></div>
+        
+          
+        </div>
+        
+      </div>
+      
+      <div class="confirmacion">
+<div class="final">
+<div class="finalizacion">
+          <div class="acept">
+            <label for="">Acepto las condiciones:*</label>
+            <input type="checkbox" name="" id="" />
+          </div>
+
+          <div class="acept">
+            <label for="">Deseo recibir las novedades</label>
+            <input type="checkbox" name="" id="" />
+          </div>
+
+          <p class="text esp-parrafo">*: campo obligatorio</p>
+        </div>
+      </div>
+        
+        <div class="botones">
+          <button class="button-final">Iniciar afiliacion</button>
+          <button class="button-final">Restablecer</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

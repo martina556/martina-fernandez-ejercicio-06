@@ -1,0 +1,136 @@
+/* tipografia 1 */
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* tipografia 2 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* #a6c1b9 verde medio
+#4d6d63 verde oscuro
+#d6e2de verde claro 
+#2b3a38 verde muy oscuro
+*/
+
+body {
+  background-color: #1f2023;
+  margin: 0 36rem;
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0 2rem;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  body {
+    margin: 0 12rem;
+  }
+}
+
+.titulo {
+  color: white;
+  border-bottom: 20px solid #4d6d63;
+  border-top: 20px solid #4d6d63;
+  border-right: #1f2023 16px solid;
+  border-left: #1f2023 16px solid;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+}
+
+.fondo-form {
+  background-color: #d6e2de;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fondo-input {
+  padding: 1rem 6rem;
+}
+
+label {
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Roboto", sans-serif;
+}
+
+fieldset:focus-within {
+  background-color: #a5bdbb;
+  .subtitulos {
+    background-color: #2b3a38;
+  }
+}
+
+.color-tamano-input {
+  border: 1px solid #4d6d63;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+.color-tamano-input:focus {
+  background-color: #4d6d63;
+  color: white;
+}
+
+.input-right::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.actividades {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitulos {
+  color: white;
+  background-color: #4d6d63;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+}
+
+.sedes {
+  display: flex;
+}
+
+.finalizacion {
+  color: white;
+}
+
+.acept {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  margin: 1rem;
+  background-color: #2b3a38;
+  border-radius: 5px;
+  color: #d6e2de;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #4d6d63;
+}
+
+button:hover {
+  background-color: #a5bdbb;
+  color: #2b3a38;
+}
+
+.punteado {
+  border-top: 15px dotted #a5bdbb;
+  margin: 1.5rem 12rem;
+}

@@ -1,0 +1,109 @@
+/* paleta de colores:
+--rosewood: #510d0aff;
+--gunmetal: #143642ff;
+--black: #000000ff;
+--dark-red: #90110bff;
+--vanilla: #eae2b7ff; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+body {
+  margin: 0;
+  background-color: #eae2b7;
+}
+
+.titulo {
+  font-family: "Rubik Bubbles";
+  text-align: center;
+  font-size: 5rem;
+  margin: 0;
+  color: #143642ff;
+}
+
+.header {
+  background-image: url(assets/urb-header.svg);
+  border-bottom: 3px solid black;
+  height: 7rem;
+  background-size: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 10rem;
+  background-image: url(assets/fondo-content.svg);
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+}
+
+.fondo-form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(139, 0, 0, 1) 0%,
+    rgba(101, 0, 11, 1) 100%
+  );
+  padding: 0.5rem;
+  border-radius: 15px;
+  color: white;
+  font-family: "Varela Round";
+  border: none;
+}
+
+.fondo-form:focus-within {
+  border: 3px solid #143642ff;
+  box-shadow: 10px 7px 8px 3px #143642ff;
+}
+
+.subtitulos {
+  background-color: #143642ff;
+  padding: 0.5rem;
+}
+
+.section-datos-personales,
+.section-datos-contacto,
+.final {
+  margin-bottom: 2rem;
+}
+
+.final {
+  background: linear-gradient(
+    0deg,
+    rgba(139, 0, 0, 1) 0%,
+    rgba(101, 0, 11, 1) 100%
+  );
+  padding: 0.5rem;
+  border-radius: 15px;
+  color: white;
+  font-family: "Varela Round";
+}
+
+.color-tamano-input {
+  background-color: #143642ff;
+  border-radius: 10px;
+}
+
+.button-final {
+  font-family: "Varela Round";
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  padding: 0.5rem;
+  background: darkred;
+  color: white;
+  border: 3px solid #143642ff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-final:hover {
+  box-shadow: inset 0 100px 0 0 #143642ff;
+  border: 3px solid #90110bff;
+}
